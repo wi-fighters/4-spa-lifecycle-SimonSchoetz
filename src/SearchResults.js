@@ -8,6 +8,19 @@ export default class SearchResults extends Component {
         }
     }
 
+    fillList = () => {
+        return (
+            <li>
+                <ul className="table-content">
+
+                    <li>ID</li>
+                    <li>Name</li>
+                    <li>name@email.scurr</li>
+                </ul>
+            </li>
+        )
+    }
+
     render() {
         return (
             <div className="results">
@@ -15,24 +28,15 @@ export default class SearchResults extends Component {
                     <input type={"text"}></input>
                     <button type={"submit"}>Search</button>
                 </form>
-                <ul className="main-list">
-                    <li>
-                        <ul className="inner-list">
-                            <li><h2>ID</h2></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul className="inner-list">
-                            <li><h2>Name</h2></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul className="inner-list">
-                            <li><h2>Email</h2></li>
-                        </ul>
-                    </li>
-
-
+                <ul className="table-header">
+                    <li><h2>ID</h2></li>
+                    <li><h2>Name</h2></li>
+                    <li><h2>Email</h2></li>
+                </ul>
+                <ul className="sub-table">
+                    {this.fillList()}
+                    {this.fillList()}
+                    {this.fillList()}
                 </ul>
 
             </div>

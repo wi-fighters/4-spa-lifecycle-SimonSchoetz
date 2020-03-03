@@ -15,6 +15,9 @@ header, .results {
 h1 {
     margin: 3vh 20px;
 }
+h2 {
+    letter-spacing: 1px;
+}
 
 form {
   display: grid;
@@ -33,36 +36,26 @@ form {
   }
 }
 
-.main-list {
+li {
+  padding: 5px;
+}
+
+
+.table-header, .table-content {
   display: grid;
   grid-template-columns: 2fr 5fr 10fr;
   grid-gap: 5px;
-  margin: 3vh 20px;
-  
-
+  // margin: 3vh 20px;
 }
-.inner-list {
-  display: grid;
-  grid-gap: 5px;
-  
-  h2 {
-    letter-spacing: 1px;
-  }
+
+.table-header {
   li {
-    padding-left: 5px;
-  }
-
-  :first-child {
-    background-color: rgba(20, 20, 62, 0.843);
-    color: white;
-    // padding-left: 15px;
-  }
-  :not(:first-child) {
-    padding: 5px;
-  }
-
+  background-color: rgba(20, 20, 62, 0.843);
+  color: white;}
+  // padding-left: 15px;
+}
+.sub-table {
   :nth-child(even) {
     background-color: rgba(20, 20, 62, 0.156);
   }
 }
-
