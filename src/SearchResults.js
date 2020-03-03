@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 
 export default class SearchResults extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+
+        }
+    }
+
     render() {
         return (
             <div className="results">
@@ -12,25 +19,16 @@ export default class SearchResults extends Component {
                     <li>
                         <ul className="inner-list">
                             <li><h2>ID</h2></li>
-                            <li>Dummy</li>
-                            <li>Dummy</li>
-                            <li>Dummy</li>
                         </ul>
                     </li>
                     <li>
                         <ul className="inner-list">
                             <li><h2>Name</h2></li>
-                            <li>Dummy</li>
-                            <li>Dummy</li>
-                            <li>Dummy</li>
                         </ul>
                     </li>
                     <li>
                         <ul className="inner-list">
                             <li><h2>Email</h2></li>
-                            <li>Dummy</li>
-                            <li>Dummy</li>
-                            <li>Dummy</li>
                         </ul>
                     </li>
 
