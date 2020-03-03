@@ -17,7 +17,18 @@ h1 {
 }
 
 form {
+  display: grid;
+  grid-template-columns: 7fr 10fr;
+  grid-gap: 5px;
   margin: 3vh 20px;
+  input {
+    font-size: 2rem;
+  }
+  button {
+    font-size: 2rem;
+    width: 10rem;
+    margin-left: 2px;
+  }
 }
 
 .main-list {
